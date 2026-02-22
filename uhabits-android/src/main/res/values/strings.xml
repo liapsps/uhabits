@@ -224,6 +224,8 @@
     <string name="no_habits">No habits found</string>
     <string name="no_numerical_habits">No measurable habits found</string>
     <string name="no_boolean_habits">No yes-or-no habits found</string>
+    <string name="select_habits">Select habits</string>
+    <string name="select_at_least_one_habit">Please select at least one habit</string>
     <string name="increment">Increment</string>
     <string name="decrement">Decrement</string>
     <string name="pref_skip_title">Enable skip days</string>

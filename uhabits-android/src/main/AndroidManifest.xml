@@ -113,6 +113,15 @@
         </activity>
 
         <activity
+            android:name=".widgets.activities.StackHabitPickerDialog"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".activities.about.AboutActivity"
             android:label="@string/about">
             <meta-data
@@ -138,6 +147,19 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_checkmark_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widgets.StackCheckmarkWidgetProvider"
+            android:exported="true"
+            android:label="@string/checkmark_stack_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stack_checkmark_info" />
         </receiver>
 
         <service

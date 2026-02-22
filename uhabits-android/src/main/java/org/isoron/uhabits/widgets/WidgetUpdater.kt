@@ -79,6 +79,7 @@ class WidgetUpdater
     fun updateWidgets(modifiedHabitId: Long?) {
         taskRunner.execute {
             updateWidgets(modifiedHabitId, CheckmarkWidgetProvider::class.java)
+            updateWidgets(modifiedHabitId, StackCheckmarkWidgetProvider::class.java)
             updateWidgets(modifiedHabitId, HistoryWidgetProvider::class.java)
             updateWidgets(modifiedHabitId, ScoreWidgetProvider::class.java)
             updateWidgets(modifiedHabitId, StreakWidgetProvider::class.java)
